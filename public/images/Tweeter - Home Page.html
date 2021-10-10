@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:8080/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta Information -->
+    <title>Tweeter - Home Page</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./Tweeter - Home Page_files/normalize.min.css" type="text/css">
+    <link rel="stylesheet" href="./Tweeter - Home Page_files/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Tweeter - Home Page_files/css2" rel="stylesheet">
+
+    <!-- App CSS -->
+    <link rel="stylesheet" href="./Tweeter - Home Page_files/layout.css" type="text/css">
+    <link rel="stylesheet" href="./Tweeter - Home Page_files/nav.css" type="text/css">
+    <link rel="stylesheet" href="./Tweeter - Home Page_files/header.css" type="text/css">
+    <link rel="stylesheet" href="./Tweeter - Home Page_files/new-tweet.css" type="text/css">
+
+    <!-- External JS -->
+    <script src="./Tweeter - Home Page_files/jquery.min.js"></script>
+
+    <!-- App JS -->
+    <script type="text/javascript" src="./Tweeter - Home Page_files/client.js"></script>
+  </head>
+
+  <body>
+    <!-- Top nav bar (fixed) -->
+    <nav>
+      <span id="logo">tweeter</span>
+      <div id="newTweet">
+        <div><span>Write</span> a new tweet!</div>
+        <i class="fa-solid fa-angles-down"></i>
+      </div>
+    </nav>
+
+    <header>
+      <div>
+          <img src="./Tweeter - Home Page_files/profile-hex.png"> 
+      </div>
+      <br>
+      <div>
+          <h2>Your Name</h2>
+      </div>
+  </header>
+
+    <!-- Page-specific (main) content here -->
+    <main class="container">
+      <section class="new-tweet">
+        <h2>Compose Tweet</h2>
+        <form action="http://localhost:8080/tweets" method="POST">
+          <label for="tweet-text">What are you humming about?</label>
+          <textarea name="text" id="tweet-text"></textarea>
+          <div>
+            <button type="submit">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
+      </section>
+    </main>
+  
+
+</body></html>

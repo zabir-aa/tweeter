@@ -14,12 +14,15 @@
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   </head>
 
   <body>
@@ -40,19 +43,43 @@
       <div>
           <h2>Your Name</h2>
       </div>
-  </header>
+    </header>
 
     <!-- Page-specific (main) content here -->
-    <main class="container">
-      <h1>
-        Hipster Ipsum
-      </h1>
-      <h2>
-        Hipster Lorem
-      </h2>
-      <p>
-        Lorem ipsum dolor amet mustache knausgaard +1, blue bottle waistcoat tbh semiotics artisan synth stumptown gastropub cornhole celiac swag. Brunch raclette vexillologist post-ironic glossier ennui XOXO mlkshk godard pour-over blog tumblr humblebrag. Blue bottle put a bird on it twee prism biodiesel brooklyn. Blue bottle ennui tbh succulents.
-      </p>
+    <main class="container" style="border: solid; padding: 0.5em; margin: 0.5em; border-color: pink;">
+      <section class="new-tweet" style="margin-bottom: 1em;">
+        <h2>Compose Tweet</h2>
+        <form action="/tweets" method="POST">
+          <label for="tweet-text">What are you humming about?</label>
+          <textarea name="text" id="tweet-text"></textarea>
+          <div id="footer">
+            <button type="submit">Tweet</button>
+            <output name="counter" class="counter" id='charCount' for="tweet-text">140</output>
+          </div>
+        </form>
+      </section>
+      <section class="tweet-container" style="border: solid; border-color: gray; padding: 0em;">
+        <article class="tweet">
+          <heading>
+            <div class = username style="color: slategrey;">
+              <img src="/images/profile-hex.png"> 
+              Newton
+            </div>
+            <div style="color: gray;">@newtonApple</div>
+          </heading>
+          <p class="tweet">
+            If I have seen further, it is by standing on the shoulders of Giants!
+          </p>
+          <footer>
+            10 days ago
+            <span>
+              <i class="fas fa-flag"></i>
+              <i class="fas fa-retweet"></i>
+              <i class="fas fa-heart"></i>
+            </span>
+          </footer>
+        </article>
+      </section>
     </main>
   </body>
 </html>

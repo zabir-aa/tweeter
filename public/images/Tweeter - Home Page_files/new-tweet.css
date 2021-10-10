@@ -1,0 +1,19 @@
+.new-tweet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+  width: 90%;
+  position: sticky;
+}
+button {
+  background-color: #4056A1;
+  color: #FFFF;
+  font-family: Bungee;
+}
+
+#tweet-text {
+  display: flex;
+  flex-direction: column;
+  width:90%;
+}

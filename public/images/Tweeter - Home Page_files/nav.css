@@ -5,10 +5,8 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 1.5em;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
-  overflow: hidden;
+  position: sticky;
+  z-index: 1;
 }
 
 #logo {
@@ -23,7 +21,7 @@ nav {
   justify-content: center;
 }
 
-nav i {
+i {
   color: crimson;
 }
 #newTweet span {

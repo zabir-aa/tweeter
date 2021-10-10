@@ -1,0 +1,40 @@
+.tweet-container > :hover{
+  box-shadow: .2em .4em gray;
+}
+article.tweet {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+  article.tweet heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0em;
+    padding-right: 0em;
+  }
+    article.tweet heading img {
+      height: 50px;
+      width: auto;
+    }
+    .username {
+      display: flex;
+      align-items: center;
+    }
+  article.tweet footer {
+    display: flex;
+    border-top: solid;
+    border-width: 0.1em;
+    border-color: gray;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.2em;
+    font-size: 0.75em;
+    color: midnightblue;
+  }
+    article span i:hover {
+      color:orange;
+    }
+    article span i {
+      color:midnightblue;
+    }
