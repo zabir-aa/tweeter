@@ -1,18 +1,18 @@
-// const { on } = require("nodemon");
-
 $(document).ready(function() {
+  console.log("ready!");
 
+ 
   $('#tweet-text').on('input', (event) => {
     const inputLength = event.target.value.length;
-    const remainingLength = 140 - inputLength;
+    const actualLength = 140 - inputLength;
     const $counter = $('.counter');
 
-    $counter.text(actualLength); //?
+    $counter.text(actualLength);
 
-    if (remainingLength < 0) {
+    if (actualLength < 0) {
       $counter.css({ 'color': 'red'});
     }
-    if (remainingLength > 0) {
+    if (actualLength > 0) {
       $counter.css({ 'color': 'black'});
     }
   });

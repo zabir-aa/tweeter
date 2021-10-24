@@ -1,9 +1,10 @@
 nav {
-  height: 120px;
+  height: 60px;
   color: #FFFF;
   background-color: #4056A1;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1.5em;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */

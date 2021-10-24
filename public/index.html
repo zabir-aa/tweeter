@@ -19,10 +19,11 @@
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- App JS -->
-    <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+    <script type="text/javascript" src="/scripts/client.js"></script>
+
   </head>
 
   <body>
@@ -44,12 +45,10 @@
           <h2>Your Name</h2>
       </div>
     </header>
-
     <!-- Page-specific (main) content here -->
-    <main class="container" style="border: solid; padding: 0.5em; margin: 0.5em; border-color: pink;">
-      <section class="new-tweet" style="margin-bottom: 1em;">
-        <h2>Compose Tweet</h2>
-        <form action="/tweets" method="POST">
+    <main class="container">
+      <section class="new-tweet">
+        <form id=tweet-form action="/tweets" method="POST">
           <label for="tweet-text">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>
           <div id="footer">
@@ -58,27 +57,7 @@
           </div>
         </form>
       </section>
-      <section class="tweet-container" style="border: solid; border-color: gray; padding: 0em;">
-        <article class="tweet">
-          <heading>
-            <div class = username style="color: slategrey;">
-              <img src="/images/profile-hex.png"> 
-              Newton
-            </div>
-            <div style="color: gray;">@newtonApple</div>
-          </heading>
-          <p class="tweet">
-            If I have seen further, it is by standing on the shoulders of Giants!
-          </p>
-          <footer>
-            10 days ago
-            <span>
-              <i class="fas fa-flag"></i>
-              <i class="fas fa-retweet"></i>
-              <i class="fas fa-heart"></i>
-            </span>
-          </footer>
-        </article>
+      <section id="tweet-container">
       </section>
     </main>
   </body>
