@@ -45,6 +45,9 @@ $( document ).ready(function() {
       alert("Thats too large to be a tweet. Tweet within 140 characters please!");
     } else {
       $.post("/tweets", serializedData)
+        .then(loadTweets());
+        $('#tweet-text').val("");
+        $("#charCount").val(140);
     }
   });
 
@@ -54,6 +57,7 @@ $( document ).ready(function() {
       method: "GET",
       dataType: "json",
       success: (tweets) => {
+        $('#tweet-container').empty()
         renderTweets(tweets);
       },
       error: (error) => {
