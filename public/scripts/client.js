@@ -38,7 +38,14 @@ $( document ).ready(function() {
   $("#tweet-form").submit(function(event) {
     event.preventDefault();
     const serializedData = $(this).serialize();
-    $.post("/tweets", serializedData)
+    console.log($('#tweet-text').val());
+    if ($('#tweet-text').val() === "" || $('#tweet-text').val() === null) {
+      alert("Your post is empty. Are you not humming about anything?");
+    } else if ($('#tweet-text').val().length > 140) {
+      alert("Thats too large to be a tweet. Tweet within 140 characters please!");
+    } else {
+      $.post("/tweets", serializedData)
+    }
   });
 
   const loadTweets = function() {
@@ -55,15 +62,6 @@ $( document ).ready(function() {
     })
   };
   loadTweets();
-
-  /*
-  const $button = $('.container #footer button');
-  $button.on('click', function () {
-    event.preventDefault();
-    console.log('Button clicked, performing ajax call...');
-    $.post("/tweets","#tweet-text",console.log("form submitted"));
-    });
-  */
 
 });
 
