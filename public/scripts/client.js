@@ -41,18 +41,19 @@ $( document ).ready(function() {
     $.post("/tweets", serializedData)
   });
 
-  const loadTweets = $.ajax({
-    url: "/tweets",
-    method: "GET",
-    dataType: "json",
-    success: (tweets) => {
-      renderTweets(tweets);
-    },
-    error: (error) => {
-      console.log(error)
-    }
-  });
-
+  const loadTweets = function() {
+    $.ajax({
+      url: "/tweets",
+      method: "GET",
+      dataType: "json",
+      success: (tweets) => {
+        renderTweets(tweets);
+      },
+      error: (error) => {
+        console.log(error)
+      }
+    })
+  };
   loadTweets();
 
   /*
