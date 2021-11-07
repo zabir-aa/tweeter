@@ -45,11 +45,14 @@
           <h2>Your Name</h2>
       </div>
     </header>
-    <!-- Page-specific (main) content here -->
+    
     <main class="container">
       <section class="new-tweet">
         <form id=tweet-form action="/tweets" method="POST">
           <label for="tweet-text">What are you humming about?</label>
+          <div id=error-element>
+            <!-- Hidden by default, shows up only in case of error-->
+          </div>
           <textarea name="text" id="tweet-text"></textarea>
           <div id="footer">
             <button type="submit">Tweet</button>

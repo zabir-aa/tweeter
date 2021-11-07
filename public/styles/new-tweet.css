@@ -30,3 +30,10 @@ button {
   background-color: #4056A1;
   color: #FFFF;
 }
+
+#error-element {
+  display: flex;
+  color: tomato;
+  justify-content:space-evenly;
+  margin-top: 0.5em;
+}

@@ -38,12 +38,13 @@ $( document ).ready(function() {
   $("#tweet-form").submit(function(event) {
     event.preventDefault();
     const serializedData = $(this).serialize();
+    const textInput = $('#tweet-text').val();
     // console.log(serializedData);
     // console.log($('#tweet-text').val());
-    if ($('#tweet-text').val() === "" || $('#tweet-text').val() === null) {
-      alert("Your post is empty. Are you not humming about anything?");
-    } else if ($('#tweet-text').val().length > 140) {
-      alert("Thats too large to be a tweet. Tweet within 140 characters please!");
+    if (textInput === "" || textInput === null) {
+      $("#error-element").text("!!! Your post is empty. Are you not humming about anything? !!!").hide().slideDown("slow");
+    } else if (textInput.length > 140) {
+      $("#error-element").text("!!! That's too large to be a tweet! Tweet within 140 characters please !!!").hide().slideDown("slow");
     } else {
       $.post("/tweets", serializedData)
         .then(loadTweets());
