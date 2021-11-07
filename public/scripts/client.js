@@ -38,7 +38,8 @@ $( document ).ready(function() {
   $("#tweet-form").submit(function(event) {
     event.preventDefault();
     const serializedData = $(this).serialize();
-    console.log($('#tweet-text').val());
+    // console.log(serializedData);
+    // console.log($('#tweet-text').val());
     if ($('#tweet-text').val() === "" || $('#tweet-text').val() === null) {
       alert("Your post is empty. Are you not humming about anything?");
     } else if ($('#tweet-text').val().length > 140) {
