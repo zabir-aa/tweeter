@@ -31,9 +31,14 @@ button {
   color: #FFFF;
 }
 
-#error-element {
-  display: flex;
+.error {
   color: tomato;
-  justify-content:space-evenly;
-  margin-top: 0.5em;
+	background-color: #fbf1f1;
+	background-image: url('https://i.imgur.com/GnyDvKN.png');
+  background-repeat: no-repeat;
+  border: 1px solid;
+	margin: 10px auto;
+	padding: 15px 10px 15px 50px;
+	background-position: 10px center;
+	max-width:max-content;
 }

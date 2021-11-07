@@ -34,7 +34,7 @@ $( document ).ready(function() {
       $('#tweet-container').prepend($tweet);
     }
   };
-
+  $("#error-element").empty().hide();
   $("#tweet-form").submit(function(event) {
     event.preventDefault();
     const serializedData = $(this).serialize();
@@ -48,6 +48,7 @@ $( document ).ready(function() {
     } else {
       $.post("/tweets", serializedData)
         .then(loadTweets());
+        $("#error-element").empty().hide();
         $('#tweet-text').val("");
         $("#charCount").val(140);
     }
