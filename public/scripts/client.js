@@ -1,5 +1,10 @@
 $( document ).ready(function() {
-  
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
   const createTweetElement = function (tweet) {
     const $tweet = $(`
     <article class="tweet">
@@ -13,7 +18,7 @@ $( document ).ready(function() {
         </span>
       </heading>
       <p class="tweet">
-        ${tweet.content.text}
+        ${escape(tweet.content.text)}
       </p>
       <footer>
       ${timeago.format(tweet.created_at)}
@@ -35,12 +40,11 @@ $( document ).ready(function() {
     }
   };
   $("#error-element").empty().hide();
+
   $("#tweet-form").submit(function(event) {
     event.preventDefault();
     const serializedData = $(this).serialize();
     const textInput = $('#tweet-text').val();
-    // console.log(serializedData);
-    // console.log($('#tweet-text').val());
     if (textInput === "" || textInput === null) {
       $("#error-element").text("!!! Your post is empty. Are you not humming about anything? !!!").hide().slideDown("slow");
     } else if (textInput.length > 140) {
