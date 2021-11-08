@@ -49,11 +49,11 @@
     <main class="container">
       <section class="new-tweet">
         <form id=tweet-form action="/tweets" method="POST">
-          <label for="tweet-text">What are you humming about?</label>
+          <!-- <label for="tweet-text">Tweet:</label> -->
           <div class="error" id="error-element">
             <!-- Hidden by default, shows up only in case of error-->
           </div>
-          <textarea name="text" id="tweet-text"></textarea>
+          <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           <div id="footer">
             <button type="submit">Tweet</button>
             <output name="counter" class="counter" id='charCount' for="tweet-text">140</output>
