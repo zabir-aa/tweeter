@@ -15,7 +15,7 @@ html {
  */
 
 body {
-  margin-top: 70px;
+  margin-top: 0px;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: row wrap;
@@ -40,6 +40,12 @@ main {
 
 
 @media (min-width: 768px) {
+  body {
+    margin-top: 70px
+  }
+  #navBar {
+    background-color: #4056A1;
+  }
   .container {
     max-width: 65%;
     width: auto;
@@ -59,8 +65,10 @@ main {
     /* margin-left: 1em; */
   }
   header img {
-    max-width: 180px;
-    max-height: 180px ;
+    min-width: 180px;
+    max-width: 240px;
+    min-height: 120px;
+    max-height: 240px ;
   }
   header h2 {
     font-size: xx-large;
@@ -69,9 +77,5 @@ main {
 }
 /* 
 @media (min-width: 1024px) {
-  .container {
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+
 } */

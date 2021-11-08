@@ -1,7 +1,7 @@
 nav {
   height: 60px;
   color: #FFFF;
-  background-color: #4056A1;
+  /* background-color: #4056A1; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,7 +9,7 @@ nav {
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
-  overflow: hidden;
+  overflow: visible;
 }
 
 #logo {
