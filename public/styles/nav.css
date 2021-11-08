@@ -23,10 +23,21 @@ nav {
   align-items: center;
   justify-content: center;
 }
+#newTweet > :hover {
+  color: greenyellow
+}
 
+@keyframes arrowDown {
+  from {padding-top: 0px;}
+  to {padding-top: 10px;}
+}
 nav i {
   color: crimson;
+  animation-name: arrowDown ;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
+
 #newTweet span {
   font-weight: 600;
 }
