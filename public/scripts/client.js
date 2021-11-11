@@ -5,7 +5,7 @@ $( document ).ready(function() {
     return div.innerHTML;
   };
 
-  const createTweetElement = function (tweet) {
+  const createTweetElement = function (tweet) { // 
     const $tweet = $(`
     <article class="tweet">
       <heading>
@@ -40,6 +40,12 @@ $( document ).ready(function() {
     }
   };
   $("#error-element").empty().hide();
+  
+  $(".new-tweet").hide();
+
+  $("#composeNewTweet").click(function() {
+    return $('.new-tweet').hide().slideDown("slow");
+  });
 
   $("#tweet-form").submit(function(event) {
     event.preventDefault();
@@ -51,7 +57,9 @@ $( document ).ready(function() {
       $("#error-element").text("!!! That's too large to be a tweet! Tweet within 140 characters please !!!").hide().slideDown("slow");
     } else {
       $.post("/tweets", serializedData)
-        .then(loadTweets());
+        .then(loadTweets())
+          .then(loadTweets())
+            .then(loadTweets());
         $("#error-element").empty().hide();
         $('#tweet-text').val("");
         $("#charCount").val(140);

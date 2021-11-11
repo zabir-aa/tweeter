@@ -17,13 +17,13 @@ nav {
   font-size: 1.5em;
 }
 
-#newTweet {
+#composeNewTweet {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-#newTweet > :hover {
+#composeNewTweet > :hover {
   color: greenyellow
 }
 
@@ -38,6 +38,6 @@ nav i {
   animation-iteration-count: infinite;
 }
 
-#newTweet span {
+#composeNewTweet span {
   font-weight: 600;
 }
