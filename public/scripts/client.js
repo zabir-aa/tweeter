@@ -1,11 +1,11 @@
-$( document ).ready(function() {
-  const escape = function (str) {
+$(document).ready(function() {
+  const escape = function(str) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
 
-  const createTweetElement = function (tweet) { // 
+  const createTweetElement = function(tweet) { //
     const $tweet = $(`
     <article class="tweet">
       <heading>
@@ -31,9 +31,9 @@ $( document ).ready(function() {
     </article>
     `);
     return $tweet;
-  }
+  };
   
-  const renderTweets = function (tweets) {
+  const renderTweets = function(tweets) {
     for (const tweetData of tweets) {
       const $tweet = createTweetElement(tweetData);
       $('#tweet-container').prepend($tweet);
@@ -58,11 +58,11 @@ $( document ).ready(function() {
     } else {
       $.post("/tweets", serializedData)
         .then(loadTweets())
-          .then(loadTweets())
-            .then(loadTweets());
-        $("#error-element").empty().hide();
-        $('#tweet-text').val("");
-        $("#charCount").val(140);
+        .then(loadTweets())
+        .then(loadTweets());
+      $("#error-element").empty().hide();
+      $('#tweet-text').val("");
+      $("#charCount").val(140);
     }
   });
 
@@ -72,19 +72,21 @@ $( document ).ready(function() {
       method: "GET",
       dataType: "json",
       success: (tweets) => {
-        $('#tweet-container').empty()
+        $('#tweet-container').empty();
         renderTweets(tweets);
       },
       error: (error) => {
-        console.log(error)
+        console.log(error);
       }
-    })
+    });
   };
   loadTweets();
 
-  var mybutton = document.getElementById("myBtn");
+  let mybutton = document.getElementById("myBtn");
 
-  window.onscroll = function() {scrollFunction()};
+  window.onscroll = function() {
+    scrollFunction();
+  };
   // When the user scrolls down 20px from the top of the document, show the button
   function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -92,7 +94,7 @@ $( document ).ready(function() {
     } else {
       $("#myBtn").css("display", "none");
     }
-  };
+  }
   // When the user clicks on the button, scroll to the top of the document
   $("#myBtn").click(function() {
     $("html, body").animate({ scrollTop: "0" });
