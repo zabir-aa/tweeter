@@ -7,7 +7,7 @@ $(document).ready(function() {
     return div.innerHTML;
   };
   // Creates the HTML body of an individual tweet from the tweet object.
-  const createTweetElement = function(tweet) {  
+  const createTweetElement = function(tweet) {
     const $tweet = $(`
     <article class="tweet">
       <heading>
@@ -93,7 +93,7 @@ $(document).ready(function() {
   loadTweets(); // The initial loadtweets function call to display all tweets at pageload
 
   // When the user scrolls down 20px from the top of the document, show the scroll to top button
-  window.onscroll = function() { 
+  window.onscroll = function() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       $("#myBtn").css("display", "block");
     } else {
