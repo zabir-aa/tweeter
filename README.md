@@ -21,11 +21,11 @@ Tweeter is a simple, single-page Twitter clone.
 - timeago
 
 ## Screenshots
-!["View on page load in Tablets"](https://github.com/zabir-aa/tweeter/blob/master/pictures/Tablet%20initial.png)
+!["View on page load in Tablets"](https://github.com/zabir-aa/tweeter/blob/master/pictures/Tablet%20Initial.png)
 
 !["View on page load in Desktops"](https://github.com/zabir-aa/tweeter/blob/master/pictures/Desktop%20initial.png)
 
-!["View after clicking compose button in Tablets"](https://github.com/zabir-aa/tweeter/blob/master/pictures/Tablet%20compose.png)
+!["View after clicking compose button in Tablets"](https://github.com/zabir-aa/tweeter/blob/master/pictures/Tablet%20Compose.png)
 
 !["View after clicking compose button in Desktops"](https://github.com/zabir-aa/tweeter/blob/master/pictures/Desktop%20compose.png)
 
