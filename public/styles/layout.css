@@ -16,6 +16,7 @@ html {
 
 body {
   margin-top: 0px;
+  margin-bottom: 50px;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: row wrap;
@@ -79,14 +80,14 @@ main {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
   bottom: 20px; /* Place the button at the bottom of the page */
-  left: 30px; /* Place the button 30px from the right */
+  right: 20px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
   background-color: 4056A1; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
+  padding: 10px; /* Some padding */
   border-radius: 5px; /* Rounded corners */
   font-size: 18px; /* Increase font size */
 }
