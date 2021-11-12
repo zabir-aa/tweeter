@@ -21,11 +21,11 @@ Tweeter is a simple, single-page Twitter clone.
 - timeago
 
 ## Screenshots
-![View on page load in Tablets](./pictures/Tablet initial.png)
-![View on page load in Desktops](./pictures/Desktop initial.png)
-![View after clicking compose button in Tablets](./pictures/Tablet compose.png)
-![View after clicking compose button in Desktops](./pictures/Desktop compose.png)
-![Error display on empty tweets](./pictures/Error empty.png)
-![Error display on too large tweets](./pictures/Error large.png)
-![Scroll to top button on page scroll](./pictures/Scroll to top.png)
+!["View on page load in Tablets"](./pictures/Tablet initial.png)
+!["View on page load in Desktops"](./pictures/Desktop initial.png)
+!["View after clicking compose button in Tablets"](./pictures/Tablet compose.png)
+!["View after clicking compose button in Desktops"](./pictures/Desktop compose.png)
+!["Error display on empty tweets"](./pictures/Error empty.png)
+!["Error display on too large tweets"](./pictures/Error large.png)
+!["Scroll to top button on page scroll"](./pictures/Scroll to top.png)
 
