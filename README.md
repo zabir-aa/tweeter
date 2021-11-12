@@ -29,9 +29,9 @@ Tweeter is a simple, single-page Twitter clone.
 
 !["View after clicking compose button in Desktops"](https://github.com/zabir-aa/tweeter/blob/master/pictures/Desktop%20compose.png)
 
-!["Error display on empty tweets"](https://github.com/zabir-aa/tweeter/blob/master/pictures/Error%20empty.png)
+!["Error display on empty tweets"](https://github.com/zabir-aa/tweeter/blob/master/pictures/Empty%20error.png)
 
-!["Error display on too large tweets"](https://github.com/zabir-aa/tweeter/blob/master/pictures/Error%20large.png)
+!["Error display on too large tweets"](https://github.com/zabir-aa/tweeter/blob/master/pictures/Large%20error.png)
 
 !["Scroll to top button on page scroll"](https://github.com/zabir-aa/tweeter/blob/master/pictures/Scroll%20to%20top.png)
 
