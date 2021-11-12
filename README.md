@@ -1,6 +1,9 @@
-# Tweeter
 
-Tweeter is a simple, single-page Twitter clone.
+Hi, I am Abdullah Ahmad Zabir 
+
+.... and this is: 
+
+Tweeter: a simple, single-page Twitter clone.
 
 ## Getting Started
 
@@ -19,6 +22,18 @@ Tweeter is a simple, single-page Twitter clone.
 - md5
 - require
 - timeago
+
+## Features
+- Single page app
+- Responsive design for desktops and tablets (design cut-off at 768px width)
+- Fixed Navbar at top for Desktop view
+- compose new tweet toggle button on Navbar opens and closes the tweet compose box
+- Tweet length of 1~140 characters is allowed. Error message is displayed otherwise.
+- Tweet header displays user name, avatar and tweeter handle
+- Live Tweet length counter in footer
+- Tweet flags reveal in footer when hovering on a tweet
+- Tweets displayed in a reverse chronology (latest first)
+- Scroll to top button appears at bottom right corner after scroll of 20px
 
 ## Screenshots
 !["View on page load in Tablets"](https://github.com/zabir-aa/tweeter/blob/master/pictures/Tablet%20Initial.png)
