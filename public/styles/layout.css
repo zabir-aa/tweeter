@@ -34,7 +34,6 @@ body {
 
 main {
   width:100%;
-  /* align-self: center; */
   margin: 0.5em;
   padding: 0.5em;
 }
@@ -63,8 +62,7 @@ main {
     float: left;
     margin: 20px;
     margin-top: 2.5em;
-    /* margin-left: 1em; */
-  }
+   }
   header img {
     min-width: 180px;
     max-width: 240px;
@@ -81,11 +79,11 @@ main {
   position: fixed; /* Fixed/sticky position */
   bottom: 20px; /* Place the button at the bottom of the page */
   right: 20px; /* Place the button 30px from the right */
-  z-index: 50; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: 4056A1; /* Set a background color */
-  color: white; /* Text color */
+  z-index: 50; /* To make sure it does not overlap */
+  border: none;
+  outline: none;
+  background-color: 4056A1;
+  color: white; /* Default text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 10px; /* Some padding */
   border-radius: 5px; /* Rounded corners */

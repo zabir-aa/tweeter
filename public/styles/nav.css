@@ -22,6 +22,7 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  cursor: pointer
 }
 #composeNewTweet > :hover {
   color: greenyellow
