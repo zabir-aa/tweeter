@@ -21,17 +21,17 @@ Tweeter is a simple, single-page Twitter clone.
 - timeago
 
 ## Screenshots
-!["View on page load in Tablets"](./pictures/Tablet initial.png)
+!["View on page load in Tablets"](https://github.com/zabir-aa/tweeter/blob/master/pictures/Tablet%20initial.png)
 
-!["View on page load in Desktops"](./pictures/Desktop initial.png)
+!["View on page load in Desktops"](https://github.com/zabir-aa/tweeter/blob/master/pictures/Desktop%20initial.png)
 
-!["View after clicking compose button in Tablets"](./pictures/Tablet compose.png)
+!["View after clicking compose button in Tablets"](https://github.com/zabir-aa/tweeter/blob/master/pictures/Tablet%20compose.png)
 
-!["View after clicking compose button in Desktops"](./pictures/Desktop compose.png)
+!["View after clicking compose button in Desktops"](https://github.com/zabir-aa/tweeter/blob/master/pictures/Desktop%20compose.png)
 
-!["Error display on empty tweets"](./pictures/Error empty.png)
+!["Error display on empty tweets"](https://github.com/zabir-aa/tweeter/blob/master/pictures/Error%20empty.png)
 
-!["Error display on too large tweets"](./pictures/Error large.png)
+!["Error display on too large tweets"](https://github.com/zabir-aa/tweeter/blob/master/pictures/Error%20large.png)
 
-!["Scroll to top button on page scroll"](./pictures/Scroll to top.png)
+!["Scroll to top button on page scroll"](https://github.com/zabir-aa/tweeter/blob/master/pictures/Scroll%20to%20top.png)
 
