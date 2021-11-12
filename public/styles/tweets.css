@@ -1,5 +1,12 @@
 #tweet-container > :hover{
   box-shadow: .2em .4em gray;
+
+}
+article span i {
+  visibility: hidden;
+}
+#tweet-container>:hover.tweet>footer>span>i {
+  visibility: visible;
 }
 article.tweet {
   display: flex;

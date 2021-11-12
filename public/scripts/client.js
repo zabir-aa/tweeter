@@ -52,9 +52,9 @@ $( document ).ready(function() {
     const serializedData = $(this).serialize();
     const textInput = $('#tweet-text').val();
     if (textInput === "" || textInput === null) {
-      $("#error-element").text("!!! Your post is empty. Are you not humming about anything? !!!").hide().slideDown("slow");
+      $("#error-element").text("Your post is empty. Are you not humming about anything?").hide().slideDown("slow");
     } else if (textInput.length > 140) {
-      $("#error-element").text("!!! That's too large to be a tweet! Tweet within 140 characters please !!!").hide().slideDown("slow");
+      $("#error-element").text("That's too large to be a tweet! Tweet within 140 characters please").hide().slideDown("slow");
     } else {
       $.post("/tweets", serializedData)
         .then(loadTweets())
