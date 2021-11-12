@@ -44,14 +44,14 @@ $( document ).ready(function() {
   $(".new-tweet").hide();
 
   $("#composeNewTweet").click(function() {
-    return $('.new-tweet').hide().slideDown("slow");
+    return $('.new-tweet').toggle("slow").focus();
   });
 
   $("#tweet-form").submit(function(event) {
     event.preventDefault();
     const serializedData = $(this).serialize();
     const textInput = $('#tweet-text').val();
-    if (textInput === "" || textInput === null) {
+    if (textInput.trim() === "" || textInput === null) {
       $("#error-element").text("Your post is empty. Are you not humming about anything?").hide().slideDown("slow");
     } else if (textInput.length > 140) {
       $("#error-element").text("That's too large to be a tweet! Tweet within 140 characters please").hide().slideDown("slow");
@@ -81,6 +81,24 @@ $( document ).ready(function() {
     })
   };
   loadTweets();
+
+  var mybutton = document.getElementById("myBtn");
+
+  window.onscroll = function() {scrollFunction()};
+  // When the user scrolls down 20px from the top of the document, show the button
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      $("#myBtn").css("display", "block");
+    } else {
+      $("#myBtn").css("display", "none");
+    }
+  };
+  // When the user clicks on the button, scroll to the top of the document
+  $("#myBtn").click(function() {
+    $("html, body").animate({ scrollTop: "0" });
+    // document.body.scrollTop = 0;
+    // document.documentElement.scrollTop = 0;
+  });
 
 });
 
